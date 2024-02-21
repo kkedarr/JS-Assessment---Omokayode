@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omokayode's JS Assessment</title>
+    <meta name="author" content="Kedar">
+    <meta name="description" content="GrowthApp JS Assessment Exercise">
+    <link rel="stylesheet" href="assessment.css">
+    <script src="https://kit.fontawesome.com/11b326c497.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <script>
+        function getVisitorInformation() {
+            const endpoint = 'https://tikka-lite.onrender.com/assessment';
+            const visitorInformation = {
+                country: 'Visitor country information here',
+                deviceType: 'Visitor device type information here',
+                browser: 'Visitor browser information here'
+            };
+
+            fetch(endpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(visitorInformation)
+            })
+            .then(response => {
+                if (response.ok) {
+                    console.log('Visitor information sent successfully');
+                } else {
+                    console.error('Failed to send visitor information');
+                }
+            })
+            .catch(error => {
+                console.error('Error sending visitor information:', error);
+            });
+        }
+
+        // Call the function to send visitor information
+        getVisitorInformation();
+    </script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"> <i class="fas fa-gem"> </i>Omokayode</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span id="first-bar" class="bar"></span>
+                <span id="second-bar" class="bar"></span>
+                <span id="third-bar" class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="assessment.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#skills-card-container" id="skills-link" class="navbar__links">Skills</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#interetscontainer" class="navbar__links">Interests</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#projectscontainer" class="navbar__links">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Hello </h1>
+                <h2>there!</h2>
+                <p>Welcome to this world</p>
+                <button class="main__btn"><a href="joinnow.html">Get Started</a></button>
+            </div>
+            <div class="main__img--container">
+                <img src="images/briefcase-solid.svg" alt="pic" id="main__img">
+            </div>
+        </div>
+    </div>
+
+<br>
+    <!-- Skills Section -->
+    <div class="skills-card-container">
+    <h1>SKILLS</h1>
+        <section class="skills-cards" id="skillcardid">
+            <div class="card-image">
+                <img src="images/code-1076536_1920.jpg" alt="" >
+            </div>
+            <div class="card-topic">
+                <p>frontend development</p>
+            </div>
+            <div id="card-description">
+                <p>I have a strong foundation in frontend development, specializing in HTML, CSS, and JavaScript. My expertise lies in creating engaging and user-friendly interfaces that meet the needs of both clients and users. With a focus on clean, efficient code, I ensure that each project is not only visually appealing but also optimized for performance. I continuously strive to expand my skill set and stay updated with the latest trends and technologies in frontend development. My goal is to deliver exceptional web experiences that leave a lasting impression and drive positive results for businesses and users alike<a href="#"></a></p>
+            </div>
+        </section>
+
+        <section class="skills-cards">
+            <div class="card-image">
+                <img src="images/writing.jpg" alt="" >
+            </div>
+            <div class="card-topic">
+                <p>technical Writing</p>
+            </div>
+            <div id="card-description">
+                <p>Experienced writer with a passion for research, content creation, and technical writing. I excel in crafting engaging and informative content tailored to diverse audiences. My research prowess allows me to delve deep into various topics, producing well-researched and insightful pieces. Whether it's blog posts, articles, or technical documentation, I strive for excellence in every project, ensuring clarity, accuracy, and value. My dedication to continuous learning keeps me abreast of industry trends, enhancing the quality and relevance of my work.<a href="#"></a></p>
+            </div>
+        </section>
+
+        <section class="skills-cards">
+            <div class="card-image">
+                <img src="images/graphicsdesign.jpg" alt="" >
+            </div>
+            <div class="card-topic">
+                <p>Graphics Design</p>
+            </div>
+            <div id="card-description">
+                <p>Creative graphic designer with a keen eye for detail and a passion for visual storytelling. I specialize in creating visually compelling designs that resonate with audiences. From logos to marketing materials, I combine artistic flair with strategic thinking to deliver impactful designs. Proficient in Adobe Creative Suite, I bring concepts to life, ensuring brand consistency and aesthetic appeal. With a focus on innovation and originality, I aim to exceed expectations and deliver designs that captivate and inspire.<a href="#"></a></p>
+            </div>
+        </section>
+    </div>
+    <div class="interestscontainer">
+        <div class="scrollbar-title">
+            <h3>INTERESTS</h3>          
+        </div>
+        <div class="scrollbar-container">
+            <div class="mini-card" id="readingimage">
+                <img src="images/reading.jpg" alt="" width="298" height="270">
+                <div id="readingtitle">
+                    <h3>Reading</h3>
+                </div>
+            </div>
+            <div class="mini-card" id="gymimage">
+                <img src="images/gym.jpg" alt="" width="298" height="270">
+                <div id="gymtitle">
+                    <h3>Weightlifting</h3>
+                </div>
+            </div>
+            <div class="mini-card" id="codingimage">
+                <img src="images/code-1076536_1920.jpg" alt="" width="298" height="270">
+                <div id="codingtitle">
+                    <h3>Coding</h3>
+                </div>
+            </div>
+            <div class="mini-card" id="gamingimage">
+                <img src="images/gaming.jpg" alt="" width="298" height="270">
+                <div id="gamingtitle">
+                    <h3>Gaming</h3>
+                </div>
+            </div>
+            <div class="mini-card" id="paintingimage">
+                <img src="images/painting.jpg" alt="" width="298" height="270">
+                <div id="paintingtitle">
+                    <h3>Painting</h3>
+                </div>
+            </div>
+            <div class="mini-card" id="musicimage">
+                <img src="images/music.jpg" alt="" width="298" height="270">
+                <div id="musictitle">
+                    <h3>Music</h3>
+                </div>
+            </div>
+            <div class="mini-card" id="drivingimage">
+                <img src="images/driving.jpg" alt="" width="298" height="270">
+                <div id="drivingtitle">
+                    <h3>Driving</h3>
+                </div>
+            </div>
+            <div class="mini-card" id="chessimage">
+                <img src="images/chess.jpg" alt="" width="298" height="270">
+                <div id="chesstitle">
+                    <h3>Chess</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+    <div class="projecttitle">
+        <h1>PROJECTS</h1>
+    </div>
+    <div class="projectcontainer">
+        <div id="project1image" class="projects">
+            <img src="images/xcanonss.png" alt="" width="500" height="300">
+            <h3>XCanon Gamers Website</h3>
+        </div>
+        <div id="project2image" class="projects">
+            <img src="images/shrinkable20doj.png" alt="" width="500" height="300">
+            <h3>Shrinkable Header</h3>
+        </div>
+        <div id="project3image" class="projects">
+            <img src="images/changebg20doj1.png" alt="" width="500" height="300">
+            <h3>Random Background Color</h3>
+        </div>
+        <div id="project4image" class="projects">
+            <img src="images/modal20doj.png" alt="" width="500" height="300">
+            <h3>Modal Popup</h3>
+        </div>
+    </div>
+<br>
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <p class="website__rights">Omokayode 2024. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="menubar.js"></script>
+<script src="clickscroll.js"></script>
+</html>
