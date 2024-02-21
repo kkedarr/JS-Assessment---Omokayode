@@ -1,4 +1,4 @@
-#JS-Assessment Website
+###JS-Assessment Website
 ##Overview
 This project is a website showcasing my skills, interests, and projects, created using HTML, CSS, and JavaScript. It includes functionality to retrieve visitor information (country, device type, and browser) and send it as a JSON object to a specified API endpoint.
 
@@ -19,22 +19,22 @@ Navigate through the website sections to view my skills, interests, and projects
 The JavaScript script in the head tag retrieves visitor information and sends it to the API endpoint.
 
 ##Code Explanation
-###Website Structure
+#Website Structure
 Organized with sections for skills, interests, and projects.
 Utilizes HTML, CSS, and JavaScript for design.
 
-###JavaScript Script
+#JavaScript Script
 Embedded in the head tag to efficiently retrieve visitor information.
 Handles API interactions and responses.
 
-###API Interaction
+#API Interaction
 Sends gathered information as a JSON object to the provided API endpoint.
 Handles API responses and errors appropriately.
 
-###Stack Used
+#Stack Used
 HTML
 CSS
 JavaScript
 
-##Acknowledgements
+###Acknowledgements
 Thanks to Tikka-Lite for the API endpoint.
