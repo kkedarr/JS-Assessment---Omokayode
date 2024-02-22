@@ -401,6 +401,10 @@ body {
     padding-bottom: 20px;
 }
 
+.skills-cards:hover {
+    transform: scale(1.1);
+}
+
 #skillcardid {
     margin-left: 100px;
 }
@@ -640,6 +644,10 @@ body {
     margin-left: 40px;
 }
 
+.mini-card:hover {
+    transform: scale(1.1);
+}
+
 #readingtitle {
     position: relative;
     color: #e9f6ff;
@@ -712,6 +720,10 @@ body {
     height: 350px;
     border-radius: 10px;
     margin: 50px 50px 50px 100px;
+}
+
+.projects:hover {
+    transform: scale(1.1);
 }
 
 .projects h3 {

@@ -1,23 +1,18 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const navbarLinks = document.querySelectorAll('.navbar__links');
 
-const navLinks = document.getElementsByClassName('navbar_links');
+    navbarLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
 
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
 
-navLinks.forEach(link => {
-    link.addEventListener('click', (event) => {
-      
-        event.preventDefault();
-
-       
-        const targetId = link.getAttribute('href').substring(1);
-
-        
-        const targetElement = document.getElementById(targetId);
-
-        
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
     });
 });
+
+  
