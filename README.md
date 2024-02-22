@@ -38,3 +38,7 @@ JavaScript
 
 ###Acknowledgements
 Thanks to Tikka-Lite for the API endpoint.
+
+GitHub Repository: https://github.com/kkedarr/JS-Assessment---Omokayode
+
+Website Link: https://js-assessment-omokayode-kc3c.vercel.app/
